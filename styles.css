@@ -1,8 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 .calculator {
   border-radius: 12px;
 }
 
-.calculator_keys {
+.calculator__keys {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -13,9 +19,14 @@
   width: 400px;
   height: 400px; 
   font-size: large;
+  background-color: azure;
+  color: black;
+  display: grid;
+  grid-gap: 1px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
-.calculator_display {
+.calculator__display {
   margin: auto;
   position: relative;
   background-color: black;
@@ -30,13 +41,6 @@
   text: ;
 }
 
-.calculator_keys {
-  background-color: azure;
-  color: black;
-  display: grid;
-  grid-gap: 1px;
-  grid-template-columns: repeat(4, 1fr);
-}
 
 input, textarea, button {
   border: 0;
